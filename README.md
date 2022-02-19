@@ -1,1 +1,1 @@
-# event_series_abaqus
+# Event series in Abaqus
