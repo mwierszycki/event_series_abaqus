@@ -2,9 +2,10 @@
 
 Event series can be used to define fields that vary in both time and space. They work in combination with a library of utility routines that can be invoked from two user subroutines `UMDFLUX` and `UEPACTIVATIONVOL`.
 
-The field described with the event series is a piecewise-defined function. There is a path in 3D space. Each segment of that path has a constant value of the field. Abaqus doesn't interpolate field values between events.
+The field described with the event series is a piecewise-defined function. There is a path in 3D space.  The events define a start and an end points of path segments. Each segment of that path has a constant value of the field. Abaqus doesn't interpolate field values between events.
 
-In the INP file path, segments are defined using `*EVENT SERIES` keyword. Each data line of the keyword defines an event. The events define a start and an end points of path segments in the time (1st data field) and space (2nd, 3rd and 4th data fields). The last field defines field value for the segment, started by the event:
+In the INP file path, segments are defined using `*EVENT SERIES` keyword. Each data line of the keyword defines an event. First data field defines time and the 2nd, 3rd and 4th data fields define the point in space of the event. The last field defines field value for the segment, started by the event:
+
 ```
 *EVENT SERIES, NAME=event_series_1, TYPE=event_series_type_1
 ** time, x, y, z, field 1
