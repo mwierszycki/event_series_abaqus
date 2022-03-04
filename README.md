@@ -39,7 +39,7 @@ The routine `getEventSeriesSliceLGLocationPath` returns the list of path segment
 
 The INP syntax of the event series is well explained in Abaqus documentation. However, the access to the defined fields using event series from the user subroutines can be much more challenging. The graphical cheat sheet can help to use event series in `UMDFLUX` subroutines:
 
-![](abaqus_cheatsheet-event_series.svg)
+![abaqus_cheatsheet-event_series.svg](abaqus_cheatsheet-event_series.svg)
 
 A simple example of using event series in `UMDFLUX` subroutine is available as well. The full source code of subroutine and INP file can be found here:
  - [umdflux_dc3d8_1elem-event_series.inp](umdflux_dc3d8_1elem-event_series.inp)
