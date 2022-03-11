@@ -29,7 +29,7 @@ There are three utility routines:
  - `getEventSeriesSliceLG` - to get the sequence of all events in the slice
  - `getEventSeriesSliceLGLocationPath` - to get the list of segments located within the provided distance to a center point
 
-The routine getEventSeriesSliceProperties gets properties of a slice of the event series data:
+The routine `getEventSeriesSliceProperties` gets properties of a slice of the event series data:
  - number of fields in the event series,
  - number of events in the current slice,
  - time of the first and the last event in the slice.
