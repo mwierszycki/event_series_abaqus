@@ -110,6 +110,10 @@ C     to be defined
       deallocate(evsTime)
       deallocate(evsCoord)
       deallocate(evsField)
+      
+      deallocate(evsPathTime)
+      deallocate(evsPathCoord)
+      deallocate(evsPathField)
 
       return
       END
